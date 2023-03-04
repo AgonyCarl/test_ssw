@@ -19,7 +19,7 @@ namespace test_ssw
         private void Form1_Load(object sender, EventArgs e)
         {
             // 初始加载所有数据
-            String connectStr = "server=localhost;port=3306;database=ssw;user=root;password=ccc.8992;";
+            String connectStr = "server=localhost;port=3306;database=ssw;user=root;password=yourpwd;";
             MySqlConnection conn = new MySqlConnection(connectStr);
             try
             {
@@ -50,7 +50,7 @@ namespace test_ssw
         private void btnSearch_Click(object sender, EventArgs e)
         {
             // 条件查询 sql拼接
-            String connectStr = "server=localhost;port=3306;database=ssw;user=root;password=ccc.8992;allowuservariables=True;";
+            String connectStr = "server=localhost;port=3306;database=ssw;user=root;password=yourpwd;allowuservariables=True;";
             MySqlConnection conn = new MySqlConnection(connectStr);
             try
             {
@@ -149,7 +149,7 @@ namespace test_ssw
             DialogResult result = MessageBox.Show("确定删除该产品吗？", "提示", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
             if (result == DialogResult.OK)
             {
-                String connectStr = "server=localhost;port=3306;database=ssw;user=root;password=ccc.8992;allowuservariables=True;";
+                String connectStr = "server=localhost;port=3306;database=ssw;user=root;password=yourpwd;allowuservariables=True;";
                 MySqlConnection conn = new MySqlConnection(connectStr);
                 try
                 {

@@ -55,7 +55,7 @@ namespace test_ssw
                 MessageBox.Show("产品数量必须为>0的数字！", "warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
 
-            String connectStr = "server=localhost;port=3306;database=ssw;user=root;password=ccc.8992;allowuservariables=True;";
+            String connectStr = "server=localhost;port=3306;database=ssw;user=root;password=yourpwd;allowuservariables=True;";
             MySqlConnection conn = new MySqlConnection(connectStr);
             try
             {
